@@ -1,0 +1,48 @@
+<%include ../partials/header%>
+
+<div class="container" id="newPage">
+    <div class="row">
+        
+        <h1 style="text-align: center;">Edit <%= news.newsTitle %></h1>
+        
+        <div style="width:30%; margin:25px auto;">
+        
+        <form action="/news/<%= news._id %>?_method=PUT" method="POST">
+            
+            <div class="form-group">
+                <input class="form-control" type="text" name="news[newsTitle]" value="<%= news.newsTitle %>">
+            </div>
+            
+            <div class="form-group">
+                <input class="form-control" type="text" name="news[newsImage]" value="<%= news.newsImage %>">
+            </div> 
+            
+            
+            <div class="form-group">
+                 <textarea class="form-control" type="text" rows="5" 
+                 name="news[newsInfo]" value="<%= news.newsDesc %>"></textarea>
+            </div>
+            
+            
+            
+            
+            <!--<div class="form-group">-->
+            <!--    <input class="form-control" type="text" name="item[itemDesc]" placeholder="Description">-->
+            <!--</div>-->
+            
+            <div class="form-group">
+            <button class="btn btn-primary btn-lg btn-default btn-block">Submit</button>
+            </div>
+            
+        </form>
+        
+        <a href="/items">Back bro!</a>
+        
+        </div>
+    </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

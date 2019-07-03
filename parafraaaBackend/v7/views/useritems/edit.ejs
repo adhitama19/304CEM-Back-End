@@ -1,0 +1,48 @@
+<%include ../partials/header%>
+
+<div class="container" id="newPage">
+    <div class="row">
+        
+        <h1 style="text-align: center;">Edit <%= merch.itemTitle %></h1>
+        
+        <div style="width:30%; margin:25px auto;">
+        
+        <form action="/items/<%= merch._id %>?_method=PUT" method="POST">
+            
+            <div class="form-group">
+                <input class="form-control" type="text" name="merch[itemTitle]" value="<%= merch.itemTitle %>">
+            </div>
+            
+            <div class="form-group">
+                <input class="form-control" type="text" name="merch[itemImage]" value="<%= merch.itemImage %>">
+            </div> 
+            
+            
+            <div class="form-group">
+                 <textarea class="form-control" type="text" rows="5" 
+                 name="merch[itemDesc]" value="<%= merch.itemDesc %>"></textarea>
+            </div>
+            
+            
+            
+            
+            <!--<div class="form-group">-->
+            <!--    <input class="form-control" type="text" name="item[itemDesc]" placeholder="Description">-->
+            <!--</div>-->
+            
+            <div class="form-group">
+            <button class="btn btn-primary btn-lg btn-default btn-block">Submit</button>
+            </div>
+            
+        </form>
+        
+        <a href="/items">Back bro!</a>
+        
+        </div>
+    </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

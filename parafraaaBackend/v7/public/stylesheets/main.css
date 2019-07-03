@@ -1,0 +1,53 @@
+.navbar { margin-bottom: 0; }
+
+body { padding-top: 70px; }
+
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
+/*For Carousel==================*/
+.tales {
+  width: 100%;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 500px !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+/*==============================*/
+
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#deleteItem {
+    display: inline;
+}
+
+html, body, .container-table {
+    height: 100%;
+}
+
+.container-table {
+    display: table;
+}
+
+.img-responsive {
+    padding-top: 20px;
+}
+

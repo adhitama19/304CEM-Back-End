@@ -1,0 +1,82 @@
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Stetique - Home</title>
+
+    <!-- Latest compiled and minified bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora,Julius+Sans-One,Lato,Montserrat" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://use.fontawesome.com/39c53209ae.js"></script>
+
+    <!-- CSS Need to always be placed after the bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/homePage.css">
+
+
+
+  </head>
+
+
+
+  <body>
+
+
+    <!-- ====== Created a navigation bar (Navbar)====== -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="containter">
+
+        <!-- Header to place the logo -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content-collapse"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#"><span class="fa fa-handshake-o"></span> Stetique</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-content-collapse">
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Buy <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">CD's and Vinyl</a></li>
+                  <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="/items/new">Sell</a></li>
+          </ul>
+
+                <!-- Right Navbar Area -->
+          <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form navbar-left">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <li><a href="#" data-toggle="modal" data-target="#signUp"><span class="fa fa-user-plus"></span>Sign Up</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#signIn"><span class="fa fa-user"></span>Sign In</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>

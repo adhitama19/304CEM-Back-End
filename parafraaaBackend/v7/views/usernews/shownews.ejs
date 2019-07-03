@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="header">Parafraaa</p>
+
+        </div>
+        <div class="col-md-9">
+            <div class="thumbnail">
+                <img class="img-responsive" src="<%= news.newsImage %>">
+                <div class="caption-full">
+                    <h4 class="pull-right">$115</h4>
+                    <!--<h4 class="pull-right">Free Postage</h4>-->
+                    <h4><a><%=news.newsTitle%></a></h4>
+                    <p><%= news.newsInfo %></p>
+                    <p>Created by: <%= news.userCreate.username %></p>
+                    <a  class="btn btn-warning" href="/news/<%=news._id%>/edit">Update</a>
+                    <form id="deleteItem"  action="/news/<%=news._id%>?_method=DELETE" method="POST">
+                            <button  class="btn btn-danger" type="submit">Delete!</button>
+                    </form>
+                    
+                </div>
+            </div>
+           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<% include ../partials/footer %>

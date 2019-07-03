@@ -1,0 +1,83 @@
+<% include ./partials/header %>
+    <!-- Modal Form Sign Up -->
+
+
+
+
+     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12"> -->
+           <form class = "form-horizontal" role="form" data-toggle="validator" action="/register" method="POST"> 
+
+             <!--Email  -->
+            <div class="form-group has-feedback">
+
+              <label for="inputEmail" class="control-label">Username</label>
+
+              <div class="input-group">
+
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" id="inputEmail" name="username" placeholder="Username must atleast be 6 characters"
+                data-error="Please write the correct email" data-minlength="6" required>
+
+              </div>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors">
+
+              </div>
+
+            </div>
+
+
+             <!--Password -->
+            <div class="form-group has-feedback">
+
+              <label for="inputPassword" class="control-label">Password</label>
+
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" class="form-control" name="password" id="inputPassword2" placeholder="Password" data-match="#inputPassword2" data-minlength="6"
+                pattern="^[a-zA-Z0-9_.-]*$" required>
+                 <span class="help-block">Password should atleast be 6 characters long</span> 
+              </div>
+
+              <span class="help-block">Password should atleast be 6 characters long</span>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+
+            </div>
+
+             
+
+
+             <!--Terms and Condition -->
+
+            <div class="form-group">
+
+              <label for="terms_condition">Terms & Condition</label>
+              <textarea readonly rows="5" class="form-control" id="terms_condition">Bro Bro Broom</textarea>
+
+            </div>
+
+            <div class="checkbox">
+
+              <label><input type="checkbox" name="terms">I agree to the terms and conditions</label>
+
+            </div>
+
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+
+          </form>
+          </div>
+
+
+    <!-- Modal End -->
+
+
+
+
+
+
+<% include ./partials/footer %>

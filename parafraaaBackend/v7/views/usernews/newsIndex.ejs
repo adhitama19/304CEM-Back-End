@@ -1,0 +1,49 @@
+
+<% include ../partials/header %>
+
+
+<!--/////////////////////////////////////////////-->
+
+
+    
+ 
+
+ <div class="container-fluid" id="jumbOne">   
+    <header class= "jumbotron">
+        <div class="container">
+            <h1>Welcome to the news section</h1>
+            <p>Browse wide range of news about sneakers</p>
+            
+        </div>
+    </header>
+</div>
+    
+
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% news.forEach(function(newz){ %>
+            <div class="col-md-6 col-sm-6">
+                <div class="thumbnail">
+                    
+                    <img src = "<%= newz.newsImage %>"> 
+                    <div class="caption">
+                        <h4> <%= newz.newsTitle %> </h4>
+                    </div>
+                    
+                    <p>
+                        <a href="/news/<%= newz._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                    
+                </div>
+                
+            </div>
+            
+        <% }); %>
+    </div>
+
+    
+</header>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<% include ../partials/footer %>
